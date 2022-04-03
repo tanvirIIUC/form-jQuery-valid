@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./jQuery file/jquery-3.6.0.js"></script>
+    <script src="./jQuery file/jquery-ui.js"></script>
+    <script src="./jQuery file/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="./style/style_main.css">
+    <link rel="stylesheet" href="./style/jquery-ui.css">
+    <title>jQuery use </title>
+    <script>
+        $(function(){
+            $("#datepicker").datepicker();
+        });
+        $(document).ready(function () {
+        $("#basic-form").validate();
+      });
+    </script>
+</head>
+<body>
+    <div class="div">
+       <h1>LOG IN PAGE</h1>
+     <div class="div-input">
+        <form id="basic-form">
+            <p>
+           <label for="username">Username</label>
+           <input type="text" name="username" required/>
+         </p>
+         <p>
+             <label for="Age">Age</label>
+             <input type="text" name="Age" required>
+         </p>
+         <p>
+             <label for="address">address</label>
+             <input type="text" name="address" required>
+         </p>
+         <label for="phone">phone</label>
+         <input type="text" name="phone" required>
+         <p>
+             <label for="date">date of bath</label>
+             <input type="text" id="datepicker" name="date" >
+         </p>
+         <p>
+             <label for="email">Email</label>
+             <input type="email" name="email" required/>
+         </p>
+         <p>
+             <label for="password">password<span>(at least 5 characters)</span></label>
+             <input type="password" name="pass" minlength="5" required/>
+         </p>
+         <p>
+             
+             <input class="submit" type="submit" value="SUBMIT" />
+         </p>
+        </form>
+
+     </div>
+
+
+    </div>
+</body>
+</html>
